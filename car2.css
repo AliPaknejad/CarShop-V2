@@ -4,9 +4,9 @@ body{
     font-family: b titr;
 }
 header{
-    background-color: rgb(255, 162, 0);
+    background-color: rgb(72, 221, 164);
     text-align: center;
-    display: flex;
+    
     
 }
 nav{
@@ -14,20 +14,15 @@ nav{
     display: flex;
 }
 main{  
-    background-color: darkgrey;
+
     display:flex;
+    
 }
 footer{
     background-color: rgb(11, 81, 223);
     text-align: center;
 }
-#m1{
-    background-color: aquamarine;
-    flex-grow: 1;
-    width:24%;
-    color: rgb(23, 20, 182);
-    width: 10%;
-}
+
 #b{
     background-color:rgb(250, 244, 243);
     display: flex;
@@ -51,15 +46,18 @@ footer{
     width: 50px;
     height: 100px;
 }
+#m1{
+    background-color: aquamarine;
+    color: rgb(23, 20, 182);
+    width:20%;
+}
 #m2{
-    width: 10%;
-    flex-grow: 2
-
+    
+    width: 40%;
 }
 #m3{
     
-    width:45%;
-    flex-grow: 1;
+    width: 50%;
 }
 #sss{
     display: flex;
