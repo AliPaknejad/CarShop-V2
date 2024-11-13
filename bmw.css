@@ -14,7 +14,6 @@ nav{
     display: flex;
 }
 main{  
-    background-color: darkgray;
     display:flex;
     
 }
@@ -52,16 +51,17 @@ footer{
     width:20%;
 }
 #m2{
-    
-    width: 40%;
+    background-color: rgb(255, 255, 255);
+    /* width: 40%; */
+    display: block;
 }
-#m3{
-    
-    width: 50%;
-}
-#sss{
+
+#mini{
     display: flex;
+   
 }
-#b2{
+#mini2{
+    display: flex;
     
+   
 }
