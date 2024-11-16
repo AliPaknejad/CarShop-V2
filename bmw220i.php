@@ -1,3 +1,6 @@
+<?php 
+    include("includes/header.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +10,14 @@
     <link rel="stylesheet" href="bmw.css">
 </head>
 <body>
-</main>
-
-    <footer>
-        <P id="h">End</P>
-        
-    </footer>
+    <div id="s"> 
+        <div id="s1">
+     
+        </div>
+    </div>
 </body>
 </html>
+
+<?php 
+    include("includes/footer.php");
+?>
