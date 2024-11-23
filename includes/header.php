@@ -14,8 +14,8 @@
             
         </div>
     </header>
-    <nav>
-        
+    <nav id="gg">
+    
     </nav>
     <main>
         <div id="m1">

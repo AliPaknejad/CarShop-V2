@@ -58,7 +58,7 @@ footer{
     background-color: rgb(255, 255, 255);
     /* width: 40%; */
     display: block;
-    background-color: rgb(163, 165, 168);
+    background-color: rgb(124, 120, 120);
     margin-right: 20px;
     
 }
@@ -82,15 +82,40 @@ a{
     color: black;
 }
 #s{
-    background-color: rgb(180, 180, 180);
+    padding: 10px 90px 10px 10px;
+
+    background-color: rgb(124, 120, 120);
     color: rgb(5, 5, 8);
-    width:20%;
-    display: flex;
-    font-size: 20px;
+    width: 80%;
+    display: block;
+    
+
+
 }
 #s1{
     display: flex;
-    padding: 20px 5px 10px 15px;
+    
+    padding: 20px 5px 10px 75px;
     margin: 5px;
+  
+    
+}
+#s2{
+    display: flex;
+    
+   
+}
+#s3{
+    display: flex;
+}
+#gg{
+    
+    background-size: 1250px;
+    
+    background-color:white;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("images/car.png")
     
 }
