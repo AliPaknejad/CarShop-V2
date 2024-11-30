@@ -3,15 +3,7 @@
      include("includes/header.php");
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="bmw.css">
-</head>
-<body>
+
 
    
         <div id="m2">
@@ -107,13 +99,8 @@
    
             
 
-</body>
-</html>
-<!-- <div style="background:pink; padding:10px; overflow:auto;">
- <img src="https://adminesite.com/wp-content/uploads/2020/06/css-floats-300x206.png" alt="CSS floats" style="float:right; margin-left:10px;">
- <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
-</div>
- -->
+
+
 <?php 
     include("includes/footer.php");
 ?>
