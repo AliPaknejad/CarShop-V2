@@ -14,17 +14,29 @@
             
         </div>
     </header>
+
     <nav id="gg">
-    
+        <div>
+            <ul class="list">
+                <li> <a class="item1" href="index.php"> صفحه اصلی </a></li>
+                <li> <a class="item1" href="">  ورود </a></li>
+                <li> <a class="item1" href="about.php"> درباره </a></li>
+                <li> <a class="item1" href=""> محصولات </a></li>
+
+
+            </ul>
+        </div>
+        <div id="t">2</div>
     </nav>
+
     <main>
         <div id="m1">
-            <ul>
+            <!-- <ul>
                 <li><a href="index.php">صفحه اصلی</a></li>
                 <li><a href=""></a>ورود</li>
                 <li><a href="about.php">درباره ما</a></li>
                 <li><a href="">محصولات</a></li>
-            </ul>
+            </ul> -->
         </div>
 </body>
 </html>

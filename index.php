@@ -70,7 +70,7 @@
                     <br>
                     <br>
                 </dd>
-                <img src="images/640i - 1K JPEG.jpg">
+                <img src="images/f10.jpg">
             </div>
 
             <!-- ---------------------- -->

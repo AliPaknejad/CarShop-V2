@@ -1,17 +1,36 @@
+
+@font-face {
+    font-family: 'B_Yekan';
+    src: 
+    url('B_Yekan/Yekan.ttf') format('truetype');
+}
+
 body{
+
     direction: rtl;
     background-color: aliceblue;
     font-family: b titr;
+    margin: 0;
+    padding: 0;
 }
 header{
     background-color: rgb(76, 72, 72);
     text-align: center;
-    
+/*     
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("images/f9.jpg") */
+  
     
 }
 nav{
-    background-color: rgb(195, 110, 110);
+    background-color: rgb(92, 92, 92);
     display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
 }
 main{  
     display:flex;
@@ -77,10 +96,8 @@ footer{
     
    
 }
-a{
-    text-decoration: none;
-    color: black;
-}
+
+
 #s{
     padding: 10px 90px 10px 10px;
 
@@ -108,14 +125,35 @@ a{
 #s3{
     display: flex;
 }
-#gg{
+#t{
+}
+.list{
+    display: flex;
+    list-style-type: none;
     
-    background-size: 1250px;
+   
+}
+
+.item{
+    font-size: 20px;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
     
-    background-color:white;
-    text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("images/car.png")
-    
+
+}
+.item1{
+    font-size: 20px;
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 46, 38);
+    margin: 0px 10px 0px 10px;
+    border-radius: 10px;
+}
+.item:hover{
+    background-color: rgb(180, 174, 179);
+}
+.item1:hover{
+    background-color: rgb(243, 114, 164);
 }
