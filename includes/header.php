@@ -19,7 +19,7 @@
         <div>
             <ul class="list">
                 <li> <a class="item1" href="index.php"> صفحه اصلی </a></li>
-                <li> <a class="item1" href="">  ورود </a></li>
+                <li> <a class="item1" href="login.html">   ثبت نام/ ورود </a></li>
                 <li> <a class="item1" href="about.php"> درباره </a></li>
                 <li> <a class="item1" href=""> محصولات </a></li>
 
