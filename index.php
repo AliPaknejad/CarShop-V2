@@ -61,6 +61,7 @@
                     حداکثر سرعت (km/h) : 250
                     <br>
                     <br>
+                    <a href="#">اطلاعات بیشتر</a>
                 </dd>
                 <img src="images/f10.jpg">
             </div>
@@ -90,6 +91,7 @@
                     حداکثر سرعت (km/h) : 215
                     <br>
                     <br>
+                    <a href="bmwx1.php">اطلاعات بیشتر</a>
                 </dd>
                 <img src="images/20ix1.png">
             </div>

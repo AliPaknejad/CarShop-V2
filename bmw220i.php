@@ -18,7 +18,6 @@
   <div id="s">
     
     <div id="s1">
-        
         <img src="images/i2.png" alt="">
     </div>
     <div id="s3"><h1>معرفی خودرو : BMW 220i گرن کوپه</h1></div>
