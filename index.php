@@ -1,15 +1,18 @@
 
+
 <?php 
-     include("includes/header.php");
+  include("includes/header.php")
 ?>
 
 
 
-   
-        <div id="m2">
-            <div id="mini1">
+      <div class="container b">
+        <div class="row e">
+            
+            <div class="col">
+              <div id="a1">
                 <dd>
-                    نام خودرو : بی ام و 220i گرن کوپه
+                    نام خودرو : بی ام و گرن کوپه 220i 
                     <br>
                     حجم موتور : 1997 سی سی 
                     <br>
@@ -26,21 +29,29 @@
                     <br>
                     شتاب 0 تا 100 : 7.1 ثانیه
                     <br>
-                    حداکثر سرعت (km/h) : 238
+                     حداکثر سرعت (km/h) : 238
+                    
                     <br>
                     <br>
                     <a href="bmw220i.php">اطلاعات بیشتر</a>
-    
-                    
                 </dd>
-                <img src="images/220i گرن کوپه - 1K JPEG.jpg">
+              </div>
             </div>
+            <div class="col b2"><div><img src="images/220i گرن کوپه - 1K JPEG.jpg"></div></div>
+        </div>
+      </div>
 
-            <!-- ---------------------- -->
 
-            <div id="mini2">
+      <!-- ----------------------------  car 2  -------------------------------- -->
+
+
+      <div class="container b">
+        <div class="row e">
+            
+            <div class="col">
+              <div id="a1">
                 <dd>
-                    نام خودرو : ب ام و 640i کوپه
+                   نام خودرو : ب ام و 640i کوپه
 
                     <br>
                     حجم موتور : 2979 سی سی 
@@ -59,18 +70,31 @@
                     شتاب 0 تا 100 : 6 ثانیه
                     <br>
                     حداکثر سرعت (km/h) : 250
+                    
                     <br>
                     <br>
-                    <a href="#">اطلاعات بیشتر</a>
+                    <a href="bmw220i.php">اطلاعات بیشتر</a>
                 </dd>
-                <img src="images/f10.jpg">
+              </div>
             </div>
+            <div class="col b2"><div><img class="imgsize"src="images/f10.jpg"></div></div>
+        </div>
+      </div>
 
-            <!-- ---------------------- -->
 
-            <div id="mini2">
+
+      <!-- ----------------------------  car 3  -------------------------------- -->
+
+
+
+
+      <div class="container b">
+        <div class="row e">
+            
+            <div class="col">
+              <div id="a1">
                 <dd>
-                    نام خودرو : بی ام و 20i x1
+                     نام خودرو : بی ام و 20i x1
 
                     <br>
                     حجم موتور : 1977 سی سی 
@@ -89,20 +113,22 @@
                     شتاب 0 تا 100 : 8 ثانیه
                     <br>
                     حداکثر سرعت (km/h) : 215
+                    
                     <br>
                     <br>
                     <a href="bmwx1.php">اطلاعات بیشتر</a>
                 </dd>
-                <img src="images/20ix1.png">
+              </div>
             </div>
+            <div class="col b2"><div><img class="imgsize"src="images/20ix1.png"></div></div>
         </div>
-        
+      </div>
 
-   
-            
+
+
 
 
 
 <?php 
-    include("includes/footer.php");
+  include("includes/footer.php")
 ?>

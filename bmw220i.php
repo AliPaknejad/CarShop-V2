@@ -1,25 +1,18 @@
 <?php 
-    include("includes/header.php");
+  include("includes/header.php")
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="bmw.css">
-    <style>
-      h1{
-        font-size: 20px;
-      }
-    </style>
-</head>
-<body>
-  <div id="s">
+
+
+        <div class="container fix1">
+            <div class="row e fix1">
+                <div class="col fix1 fix2">
+
+                    <div id="s">
     
     <div id="s1">
-        <img src="images/i2.png" alt="">
+        <img id="b2" src="images/i2.png" alt="">
     </div>
+    <br>
     <div id="s3"><h1>معرفی خودرو : BMW 220i گرن کوپه</h1></div>
     <div id="s2">
         
@@ -104,11 +97,11 @@
 البته این امکانات تنها در کاتالوگ اولیه این خودرو در سامانه یکپارچه ذکر شده و ممکن است خودروی تحویلی نهایی آپشن های متفاوتی داشته باشد!
         </h3>
       </div>
-
+    <br>
       <div>
         <img src="images/f3.jpg" alt="">
       </div>
-
+    <br>
       <div>
         <h1>طراحی ظاهری ب ام و 220i گرن کوپه</h1>
       </div>
@@ -118,27 +111,27 @@
 
 طراحی جلوی این خودرو شما را یه یاد بچه کوسه خواهند انداخت، این نیز از هنر طراحان باواریایی است که می توانند سه خودروی مختلف شبیه به کوسه طراحی کنند که هیچ کدام شبیه به هم نیستند! منظورمان Z4، سری 6 و همین سری 2 گرن کوپه است.</h3>
       </div>
-
+    <br>
       <div>
         <img src="images/f1.jpg" alt="">
       </div>
-
+    <br>
       <div>
         <h3>نمای کناری بی ام و 220i وارداتی ساده و در عین حال بسیار جذاب است؛ قطعا فرم فرود سقف روی درب صندوق و حالت ستون C بیشترین تاثیر را روی این جذابیت داشته. البته طراحی خطوط و حجم پردازی های استاندارد نیز در زیبایی این نما موثر بوده اند.</h3>
       </div>
-
+    <br>
       <div>
         <img src="images/f2.jpg" alt="">
       </div>
-
+    <br>
       <div>
         <h3>نمای عقب 220i گرن کوپه بیننده را به یاد نسل جدید X6 می اندازد. علت این موضوع نیز چراغ های عقب است که کاملا شبیه به چراغ های X6 هستند. اما از شباهت چراغ ها به X6 که بگذریم، برآمدگی بالای درب صندوق که یک اسپویلر کوچک را شبیه سازی کرده به همراه طراحی خاص سپر و هواکش های اطراف آن، حقیقتا سری 2 گرن کوپه را تبدیل به اثر منحصر به فرد کرده اند.</h3>
       </div>
-
+    <br>
       <div>
         <img src="images/f4.jpg" alt="">
       </div>
-
+    <br>
       <div>
         <h1>
         کابین و فضای داخلی ب ام و 220i گرن کوپه
@@ -152,11 +145,11 @@
 
         </h3>
       </div>
-
+    <br>
       <div>
         <img src="images/f5.jpg" alt="">
       </div>
-
+    <br>
       <div>
         <h1>
         ب ام و 220i گرن کوپه در بازار؛ قیمت و رقبا
@@ -171,15 +164,22 @@
 در طرف مقابل اما ب ام و 318i کابین بزرگتر، ابعاد طراحی شکیل تر و راحتی بیشتری دارد که ممکن است برای بخشی دیگر از مشتریان قابل توجه باشد.
         </h3>
       </div>
-
+    <br>
       <div>
         <img src="images/f7.jpg" alt="">
       </div>
       <br>
   </div>
-</body>
-</html>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
 
 <?php 
-    include("includes/footer.php");
+  include("includes/footer.php")
 ?>
