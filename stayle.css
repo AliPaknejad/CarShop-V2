@@ -20,7 +20,7 @@ section img{
   
 }
 .e{
-    background-color: darkslategray;
+    background-color: rgb(126, 126, 126);
 }
 #a1{
     margin: 20px 0px 0px 100px;
@@ -56,4 +56,21 @@ a{
 #img1{
     width:750px ;
     height: 400px;
+}
+.color{
+    background-color: rgb(135, 134, 139);
+}
+.pad{
+    margin: 5px;
+    padding: 5px;
+}
+@media (max-width:600px){
+    .tt {width: 100%;}
+}
+@media (max-width:1000px){
+    .tg {width: 50%;}
+}
+.ls{
+    justify-content: center;
+    text-align: center;
 }

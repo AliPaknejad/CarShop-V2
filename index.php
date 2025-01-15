@@ -9,7 +9,7 @@
       <div class="container b">
         <div class="row e">
             
-            <div class="col">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
               <div id="a1">
                 <dd>
                     نام خودرو : بی ام و گرن کوپه 220i 
@@ -37,7 +37,8 @@
                 </dd>
               </div>
             </div>
-            <div class="col b2"><div><img src="images/220i گرن کوپه - 1K JPEG.jpg"></div></div>
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 "><div><img class="img-fluid pad" src="images/220i گرن کوپه - 1K JPEG.jpg"></div></div>
         </div>
       </div>
 
@@ -48,7 +49,7 @@
       <div class="container b">
         <div class="row e">
             
-            <div class="col">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div id="a1">
                 <dd>
                    نام خودرو : ب ام و 640i کوپه
@@ -77,7 +78,7 @@
                 </dd>
               </div>
             </div>
-            <div class="col b2"><div><img class="imgsize"src="images/f10.jpg"></div></div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"><div><img class="imgsize img-fluid pad"src="images/f10.jpg"></div></div>
         </div>
       </div>
 
@@ -91,7 +92,7 @@
       <div class="container b">
         <div class="row e">
             
-            <div class="col">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div id="a1">
                 <dd>
                      نام خودرو : بی ام و 20i x1
@@ -120,7 +121,7 @@
                 </dd>
               </div>
             </div>
-            <div class="col b2"><div><img class="imgsize"src="images/20ix1.png"></div></div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"><div><img class="imgsize img-fluid pad"src="images/20ix1.png"></div></div>
         </div>
       </div>
 
@@ -133,7 +134,7 @@
         <div class="container b">
         <div class="row e">
             
-            <div class="col">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div id="a1">
                 <dd>
                     نام خودرو : بی ام و i8 کوپه 
@@ -162,9 +163,13 @@
                 </dd>
               </div>
             </div>
-            <div class="col b2"><div><img class="imgsize"src="images/1bmwi8.jpg"></div></div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"><div><img class="imgsize img-fluid pad"src="images/1bmwi8.jpg"></div></div>
         </div>
       </div>
+
+
+      
+
 
 
 <?php 
