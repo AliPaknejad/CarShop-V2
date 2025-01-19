@@ -10,27 +10,36 @@
 <body>
     
     <div class="wrapper">
-        <form action="login_action.php" method="Post">
-            <h1>login</h1>
+        <form action="register_action.php" method="Post">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Your Name" name="name" required>
+                <i class='bx '></i>
+            </div>
+
             <div class="input-box">
                 <input type="text" placeholder="UserName" name="user" required>
                 <i class='bx bxs-user'></i>
             </div>
 
+
             <div class="input-box">
                 <input type="password" placeholder="Password" name="pass"  required>
                 <i class='bx bxs-lock-alt' ></i>
             </div>
-
-            <div class="rememmber-forgot">
-                <label> <input type="checkbox"> Remember me</label>
-                <a href="#">Forget Password</a>
+            
+            <div class="input-box">
+                <input type="text" placeholder="Gmail" name="gmail" required>
+                <i class='bx '></i>
             </div>
+            
 
-            <button type="submit" class="btn">Login</button>
+            
+
+            <button type="submit" class="btn">Register</button>
 
             <div class="register-link">
-                <p>Don't have an account? <a href="register.html">Register</a></p>
+                <p>Do you have an account? <a href="login.html">Login</a></p>
                 
             </div>
         </form>

@@ -43,7 +43,7 @@
                 <a class="nav-link" href="#">Gallery</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link" href="login.html">Login</a>
+                <a class="nav-link" href="login.html">Login/Register</a>
               </li>
             </ul>
            
