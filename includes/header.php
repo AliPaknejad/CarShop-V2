@@ -1,3 +1,7 @@
+
+<?php 
+session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,15 +16,15 @@
   </head>
   <body>
 
-    <header>
-
+    <header style="justify-content: center;">
+      
     </header>
 
 
 
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
         <div class="container">
-        
+          
           <a class="navbar-brand fs-2 fw-bold" href="#"><span text-danger>BMW</span><img id="imglogo" src="logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,8 +46,21 @@
               <li class="nav-item me-3">
                 <a class="nav-link" href="#">Gallery</a>
               </li>
-              <li class="nav-item me-3">
+              <!-- <li class="nav-item me-3">
                 <a class="nav-link" href="login.html">Login/Register</a>
+              </li> -->
+              <li class="nav-item me-3">
+              <?php 
+                  if(isset($_SESSION["Login"]) && $_SESSION["Login"]==true){
+                   ?>
+                      <a class="nav-link" href="logout.php">Logout</a>
+                   <?php
+                  }else{
+                    ?>
+                    <a class="nav-link" href="register.html">Login</a>
+                   <?php
+                  }
+                  ?>
               </li>
             </ul>
            

@@ -15,9 +15,20 @@ $c=mysqli_connect("localhost","root","","CarShop");
 $find=mysqli_query($c,"SELECT * FROM `Users` WHERE UserName='$user' AND PassWord='$pass'");
 $row=mysqli_fetch_array($find);
 if($row){
-    echo("Welcome to your website :)");
+    $_SESSION["Login"]=true;
+    ?>
+    <div class="alert alert-success" role="alert">
+        <p class="pc"> Welcome to your web </p>
+    </div>
+    <?php
 }else{
-    echo("The entered information is not correct !!");
+
+  ?>
+  <div class="alert alert-danger" role="alert">
+      <p class="pc">!! The entered information is not correct </p>
+  </div>
+  <?php
+   
 }
 
 mysqli_close($c);
