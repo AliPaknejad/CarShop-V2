@@ -1,177 +1,278 @@
-
-
-<?php 
-  include("includes/header.php")
+<?php
+include("includes/header.php")
 ?>
 
 
 
-      <div class="container b">
-        <div class="row e">
-            
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-              <div id="a1">
-                <dd>
-                    نام خودرو : بی ام و گرن کوپه 220i 
-                    <br>
-                    حجم موتور : 1997 سی سی 
-                    <br>
-                    
-                    کلاس بدنه : سدان
-                    <br>
-                    نوع موتور : بنزینی دارای توربو
-                    <br>
-                    تعداد سیلندرها : 4 سیلندر
-                    <br>
-                    نوع جعبه دنده : اتوماتیک دوکلاچه
-                    <br>
-                    مصرف سوخت ترکیبی : 6 لیتر در 100 کیلو متر
-                    <br>
-                    شتاب 0 تا 100 : 7.1 ثانیه
-                    <br>
-                     حداکثر سرعت (km/h) : 238
-                    
-                    <br>
-                    <br>
-                    <a href="bmw220i.php">اطلاعات بیشتر</a>
-                </dd>
-              </div>
-            </div>
 
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 "><div><img class="img-fluid pad" src="images/220i گرن کوپه - 1K JPEG.jpg"></div></div>
+<?php
+
+$link = mysqli_connect("localhost", "root", "", "carshop");
+$resul = mysqli_query($link, "SELECT * FROM `cars` WHERE id=1");
+mysqli_close($link);
+$row = mysqli_fetch_array($resul);
+
+?>
+
+
+<?php
+while ($row) {
+
+?>
+
+  <div class="container b">
+    <div class="row e">
+
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div id="a1">
+          <dd>
+            نام خودرو : <span> <?php echo ($row["CarName"]);  ?> </span>
+
+            <br>
+            حجم موتور : <span> <?php echo ($row["EngineVolume"]);  ?> </span>
+            <br>
+
+            کلاس بدنه : <span> <?php echo ($row["BodyClass"]);  ?> </span>
+            <br>
+            نوع موتور : <span> <?php echo ($row["EngineType"]);  ?> </span>
+            <br>
+            تعداد سیلندرها : <span> <?php echo ($row["NumberOfCylinders"]);  ?> </span>
+            <br>
+            نوع جعبه دنده : <span> <?php echo ($row["GearBoxType"]);  ?> </span>
+            <br>
+            مصرف سوخت ترکیبی : <span> <?php echo ($row["FuelConsumption"]);  ?> </span>
+            <br>
+            شتاب 0 تا 100 : <span> <?php echo ($row["Acceleration"]);  ?> </span>
+            <br>
+            حداکثر سرعت (km/h) : <span> <?php echo ($row["MaximumSpeed(km/h)"]);  ?> </span>
+
+            <br>
+            <br>
+            <a href="bmw220i.php">اطلاعات بیشتر</a>
+          </dd>
         </div>
       </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div><img class="imgsize img-fluid pad" src="images/220i گرن کوپه - 1K JPEG.jpg"></div>
+      </div>
+    </div>
+  </div>
+
+<?php
+  $row = mysqli_fetch_array($resul);
+}
+?>
 
 
-      <!-- ----------------------------  car 2  -------------------------------- -->
+<!-- ----------------------------  car 2  -------------------------------- -->
 
 
-      <div class="container b">
-        <div class="row e">
-            
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <div id="a1">
-                <dd>
-                   نام خودرو : ب ام و 640i کوپه
+<?php
 
-                    <br>
-                    حجم موتور : 2979 سی سی 
-                    <br>
-                    
-                    کلاس بدنه : کروک
-                    <br>
-                    نوع موتور : بنزینی
-                    <br>
-                      تعداد سیلندرها : 6 سیلندر
-                    <br>
-                    نوع جعبه دنده : اتوماتیک تیپ ترونیک
-                    <br>
-                    مصرف سوخت ترکیبی : 7.9 لیتر در 100 کیلو متر
-                    <br>
-                    شتاب 0 تا 100 : 6 ثانیه
-                    <br>
-                    حداکثر سرعت (km/h) : 250
-                    
-                    <br>
-                    <br>
-                    <a href="bmw220i.php">اطلاعات بیشتر</a>
-                </dd>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"><div><img class="imgsize img-fluid pad"src="images/f10.jpg"></div></div>
+$link = mysqli_connect("localhost", "root", "", "carshop");
+$resul = mysqli_query($link, "SELECT * FROM `cars` WHERE id=2");
+mysqli_close($link);
+$row = mysqli_fetch_array($resul);
+
+?>
+
+
+<?php
+while ($row) {
+
+?>
+
+  <div class="container b">
+    <div class="row e">
+
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div id="a1">
+          <dd>
+            نام خودرو : <span> <?php echo ($row["CarName"]);  ?> </span>
+
+            <br>
+            حجم موتور : <span> <?php echo ($row["EngineVolume"]);  ?> </span>
+            <br>
+
+            کلاس بدنه : <span> <?php echo ($row["BodyClass"]);  ?> </span>
+            <br>
+            نوع موتور : <span> <?php echo ($row["EngineType"]);  ?> </span>
+            <br>
+            تعداد سیلندرها : <span> <?php echo ($row["NumberOfCylinders"]);  ?> </span>
+            <br>
+            نوع جعبه دنده : <span> <?php echo ($row["GearBoxType"]);  ?> </span>
+            <br>
+            مصرف سوخت ترکیبی : <span> <?php echo ($row["FuelConsumption"]);  ?> </span>
+            <br>
+            شتاب 0 تا 100 : <span> <?php echo ($row["Acceleration"]);  ?> </span>
+            <br>
+            حداکثر سرعت (km/h) : <span> <?php echo ($row["MaximumSpeed(km/h)"]);  ?> </span>
+
+            <br>
+            <br>
+            <a href="bmw220i.php">اطلاعات بیشتر</a>
+          </dd>
         </div>
       </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div><img class="imgsize img-fluid pad" src="images/f10.jpg"></div>
+      </div>
+    </div>
+  </div>
+
+<?php
+  $row = mysqli_fetch_array($resul);
+}
+?>
 
 
 
-      <!-- ----------------------------  car 3  -------------------------------- -->
+<!-- ----------------------------  car 3  -------------------------------- -->
 
 
 
 
-      <div class="container b">
-        <div class="row e">
-            
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <div id="a1">
-                <dd>
-                     نام خودرو : بی ام و 20i x1
+<?php
 
-                    <br>
-                    حجم موتور : 1977 سی سی 
-                    <br>
-                    
-                    کلاس بدنه : شاسی بلند
-                    <br>
-                    نوع موتور : بنزینی دارای توربو
-                    <br>
-                      تعداد سیلندرها : 4 سیلندر
-                    <br>
-                    نوع جعبه دنده : اتوماتیک تیپ ترونیک
-                    <br>
-                    مصرف سوخت ترکیبی : 7.7 لیتر در 100 کیلو متر
-                    <br>
-                    شتاب 0 تا 100 : 8 ثانیه
-                    <br>
-                    حداکثر سرعت (km/h) : 215
-                    
-                    <br>
-                    <br>
-                    <a href="bmwx1.php">اطلاعات بیشتر</a>
-                </dd>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"><div><img class="imgsize img-fluid pad"src="images/20ix1.png"></div></div>
+$link = mysqli_connect("localhost", "root", "", "carshop");
+$resul = mysqli_query($link, "SELECT * FROM `cars` WHERE id=3");
+mysqli_close($link);
+$row = mysqli_fetch_array($resul);
+
+?>
+
+
+<?php
+while ($row) {
+
+?>
+
+  <div class="container b">
+    <div class="row e">
+
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div id="a1">
+          <dd>
+            نام خودرو : <span> <?php echo ($row["CarName"]);  ?> </span>
+
+            <br>
+            حجم موتور : <span> <?php echo ($row["EngineVolume"]);  ?> </span>
+            <br>
+
+            کلاس بدنه : <span> <?php echo ($row["BodyClass"]);  ?> </span>
+            <br>
+            نوع موتور : <span> <?php echo ($row["EngineType"]);  ?> </span>
+            <br>
+            تعداد سیلندرها : <span> <?php echo ($row["NumberOfCylinders"]);  ?> </span>
+            <br>
+            نوع جعبه دنده : <span> <?php echo ($row["GearBoxType"]);  ?> </span>
+            <br>
+            مصرف سوخت ترکیبی : <span> <?php echo ($row["FuelConsumption"]);  ?> </span>
+            <br>
+            شتاب 0 تا 100 : <span> <?php echo ($row["Acceleration"]);  ?> </span>
+            <br>
+            حداکثر سرعت (km/h) : <span> <?php echo ($row["MaximumSpeed(km/h)"]);  ?> </span>
+
+            <br>
+            <br>
+            <a href="bmwx1.php">اطلاعات بیشتر</a>
+          </dd>
         </div>
       </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div><img class="imgsize img-fluid pad" src="images/20ix1.png"></div>
+      </div>
+    </div>
+  </div>
+
+<?php
+  $row = mysqli_fetch_array($resul);
+}
+?>
 
 
 
-        <!-- ----------------------------  car 3  -------------------------------- -->
+
+
+<!-- ----------------------------  car 4  -------------------------------- -->
 
 
 
-        <div class="container b">
-        <div class="row e">
-            
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <div id="a1">
-                <dd>
-                    نام خودرو : بی ام و i8 کوپه 
-                    <br>
-                    حجم موتور : 1499 سی سی 
-                    <br>
-                    
-                    کلاس بدنه : کوپه
-                    <br>
-                    نوع موتور : هیبرید
-                    <br>
-                    تعداد سیلندرها : 3 سیلندر
-                    <br>
-                    نوع جعبه دنده : اتوماتیک 
-                    <br>
-                    مصرف سوخت ترکیبی : 1.9 لیتر در 100 کیلومتر
 
-                    <br>
-                    شتاب 0 تا 100 : 4.4 ثانیه
-                    <br>
-                     حداکثر سرعت (km/h) : 250
-                    
-                    <br>
-                    <br>
-                    <a href="bmwi8.php">اطلاعات بیشتر</a>
-                </dd>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"><div><img class="imgsize img-fluid pad"src="images/1bmwi8.jpg"></div></div>
+<?php
+
+$link = mysqli_connect("localhost", "root", "", "carshop");
+$resul = mysqli_query($link, "SELECT * FROM `cars` WHERE id=4");
+mysqli_close($link);
+$row = mysqli_fetch_array($resul);
+
+?>
+
+
+<?php
+while ($row) {
+
+?>
+
+  <div class="container b">
+    <div class="row e">
+
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div id="a1">
+          <dd>
+            نام خودرو : <span> <?php echo ($row["CarName"]);  ?> </span>
+
+            <br>
+            حجم موتور : <span> <?php echo ($row["EngineVolume"]);  ?> </span>
+            <br>
+
+            کلاس بدنه : <span> <?php echo ($row["BodyClass"]);  ?> </span>
+            <br>
+            نوع موتور : <span> <?php echo ($row["EngineType"]);  ?> </span>
+            <br>
+            تعداد سیلندرها : <span> <?php echo ($row["NumberOfCylinders"]);  ?> </span>
+            <br>
+            نوع جعبه دنده : <span> <?php echo ($row["GearBoxType"]);  ?> </span>
+            <br>
+            مصرف سوخت ترکیبی : <span> <?php echo ($row["FuelConsumption"]);  ?> </span>
+            <br>
+            شتاب 0 تا 100 : <span> <?php echo ($row["Acceleration"]);  ?> </span>
+            <br>
+            حداکثر سرعت (km/h) : <span> <?php echo ($row["MaximumSpeed(km/h)"]);  ?> </span>
+
+            <br>
+            <br>
+            <a href="bmwi8.php">اطلاعات بیشتر</a>
+          </dd>
         </div>
       </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div><img class="imgsize img-fluid pad" src="images/1bmwi8.jpg"></div>
+      </div>
+    </div>
+  </div>
+
+<?php
+  $row = mysqli_fetch_array($resul);
+}
+?>
 
 
-      
 
 
 
-<?php 
-  include("includes/footer.php")
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+include("includes/footer.php")
 ?>
