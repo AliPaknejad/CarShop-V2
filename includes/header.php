@@ -40,9 +40,16 @@ session_start();
               <li class="nav-item me-3">
                 <a class="nav-link" href="#">Contact</a>
               </li>
+
+              <?php 
+              if(isset($_SESSION["state_login"]) && $_SESSION["state_login"]==true && $_SESSION["user_type"]=="admin")
+              { 
+              ?>
               <li class="nav-item me-3">
-                <a class="nav-link" href="#">Call</a>
+                <a class="nav-link" href="manage.php">Management</a>
               </li>
+              <?php } ?>
+
               <li class="nav-item me-3">
                 <a class="nav-link" href="#">Gallery</a>
               </li>
@@ -51,13 +58,14 @@ session_start();
               </li> -->
               <li class="nav-item me-3">
               <?php 
-                  if(isset($_SESSION["Login"]) && $_SESSION["Login"]==true){
+                  if(isset($_SESSION["state_login"]) && $_SESSION["state_login"]==true){
                    ?>
                       <a class="nav-link" href="logout.php">Logout</a>
+                     
                    <?php
                   }else{
                     ?>
-                    <a class="nav-link" href="register.html">Login</a>
+                    <a class="nav-link" href="login.php">Login</a>
                    <?php
                   }
                   ?>

@@ -82,3 +82,14 @@ a{
 a{
     text-decoration: none;
 }
+.title1{
+    color: rgb(159, 244, 255);
+    text-shadow: 5px 5px 5px;
+    text-align: center;
+}
+.ti{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}

@@ -9,6 +9,19 @@
 </head>
 <body>
     
+<?php 
+if(isset($_SESSION["state_login"]) && $_SESSION["state_Login"] == true){
+?>
+<script type="text/javascript">
+    location.replace("index.php");
+</script>
+<?php
+}
+?>
+
+
+
+
     <div class="wrapper">
         <form action="login_action.php" method="Post">
             <h1>login</h1>
@@ -30,7 +43,7 @@
             <button type="submit" class="btn">Login</button>
 
             <div class="register-link">
-                <p>Don't have an account? <a href="register.html">Register</a></p>
+                <p>Don't have an account? <a href="register.php">Register</a></p>
                 
             </div>
         </form>

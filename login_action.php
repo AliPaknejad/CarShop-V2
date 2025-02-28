@@ -7,19 +7,38 @@
 // $name=$_POST["name"];
 $user=$_POST["user"];
 $pass=$_POST["pass"];
+
 // $gmail=$_POST["gmail"];
 
 
 
-$c=mysqli_connect("localhost","root","","CarShop");
-$find=mysqli_query($c,"SELECT * FROM `Users` WHERE UserName='$user' AND PassWord='$pass'");
-$row=mysqli_fetch_array($find);
-if($row){
-    $_SESSION["Login"]=true;
+$link=mysqli_connect("localhost","root","","CarShop");
+$result=mysqli_query($link,"SELECT * FROM `Users` WHERE UserName='$user' AND PassWord='$pass'");
+mysqli_close($link);
+$row=mysqli_fetch_array($result);
+if($row==true){
+    $_SESSION["state_login"]=true;
+    $_SESSION["name"]=$row["Name"];
+
+    if($row["admin"]==0)
+      {
+        $_SESSION["user_type"]="public";
+      }
+    else if($row["admin"]==1)
+      {
+        $_SESSION["user_type"]="admin";
+      }
+
     ?>
+   
     <div class="alert alert-success" role="alert">
         <p class="pc"> Welcome to your web </p>
     </div>
+    
+      <script type="text/javascript">
+        location.replace("index.php")
+      </script>
+
     <?php
 }else{
 
@@ -31,7 +50,7 @@ if($row){
    
 }
 
-mysqli_close($c);
+
 
 ?>
 

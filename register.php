@@ -8,8 +8,23 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
-    <div class="wrapper">
+
+<?php 
+if(isset($_SESSION["state_login"]) && $_SESSION["state_Login"] == true){
+?>
+<script type="text/javascript">
+    location.replace("index.php");
+</script>
+<?php
+}
+?>
+
+
+
+
+
+
+        <div class="wrapper">
         <form action="register_action.php" method="Post">
             <h1>Register</h1>
             <div class="input-box">
@@ -39,7 +54,7 @@
             <button type="submit" class="btn">Register</button>
 
             <div class="register-link">
-                <p>Do you have an account? <a href="login.html">Login</a></p>
+                <p>Do you have an account? <a href="login.php">Login</a></p>
                 
             </div>
         </form>

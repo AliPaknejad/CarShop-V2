@@ -3,6 +3,18 @@ include("includes/header.php");
 ?>
 
 
+<!-- <div class="row">
+    <p class="col-6">
+        <a href="cars_add.php">+</a>
+            اضافه کردن خودرو
+    </p>
+</div> -->
+    <p class="ti" >
+
+        
+        <a class="btn btn-success" href="cars_add.php"> + </a>
+         اضافه کردن خودرو
+    </p>
 
 
 
@@ -24,9 +36,9 @@ while ($row) {
 ?>
 
   <div class="container b">
-    <div class="row e ">
+    <div class="row e">
 
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div id="a1">
           <dd>
             نام خودرو : <span> <?php echo ($row["CarName"]);  ?> </span>
@@ -49,7 +61,15 @@ while ($row) {
             <br>
             حداکثر سرعت (km/h) : <span> <?php echo ($row["MaximumSpeed"]);  ?> </span>
 
-          
+            <br>
+            <br>
+           
+            <div class="col-12 col-md-9">
+            <a class="btn btn-danger" href=cars_delete.php?id=<?php echo($row["id"]); ?>">-</a>
+            <a class="btn btn-success" href="cars_edit.php?id=<?php echo($row["id"]); ?>">*</a>
+            
+            </div>
+             
           </dd>
         </div>
       </div>
@@ -64,6 +84,16 @@ while ($row) {
   $row = mysqli_fetch_array($resul);
 }
 ?>
+
+
+
+
+
+
+
+
+
+
 
 
 
