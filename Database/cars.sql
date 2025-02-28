@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 07, 2025 at 11:27 AM
+-- Generation Time: Feb 28, 2025 at 02:33 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -37,18 +37,19 @@ CREATE TABLE `cars` (
   `GearBoxType` varchar(30) NOT NULL,
   `FuelConsumption` varchar(30) NOT NULL,
   `Acceleration` varchar(12) NOT NULL,
-  `MaximumSpeed(km/h)` int(3) NOT NULL
+  `MaximumSpeed` int(3) NOT NULL,
+  `imageurl` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_persian_ci;
 
 --
 -- Dumping data for table `cars`
 --
 
-INSERT INTO `cars` (`id`, `CarName`, `EngineVolume`, `BodyClass`, `EngineType`, `NumberOfCylinders`, `GearBoxType`, `FuelConsumption`, `Acceleration`, `MaximumSpeed(km/h)`) VALUES
-(1, 'بی ام و گرن کوپه 220i', '1997 سی سی', 'سدان', 'بنزینی دارای توربو', '4 سیلندر', 'اتوماتیک دوکلاچه', '6 لیتر در 100 کیلو متر', '7.1 ثانیه', 238),
-(2, 'ب ام و 640i کوپه', '2979 سی سی', 'کروک', 'بنزینی', '6 سیلندر', 'اتوماتیک تیپ ترونیک', '7.9 لیتر در 100 کیلو متر', '6 ثانیه', 250),
-(3, 'بی ام و 20i x1', '1977 سی سی', 'شاسی بلند', 'بنزینی دارای توربو', '4 سیلندر', 'اتوماتیک تیپ ترونیک', '7.7 لیتر در 100 کیلو متر', '8 ثانیه', 215),
-(4, 'بی ام و i8 کوپه', '1499 سی سی', 'کوپه', 'هیبرید', '3 سیلندر', 'اتوماتیک', '1.9 لیتر در 100 کیلومتر', '4.4 ثانیه', 250);
+INSERT INTO `cars` (`id`, `CarName`, `EngineVolume`, `BodyClass`, `EngineType`, `NumberOfCylinders`, `GearBoxType`, `FuelConsumption`, `Acceleration`, `MaximumSpeed`, `imageurl`) VALUES
+(9, 'بی ام و i8', '1499 سی سی', 'کوپه', 'هیبرید', '3 سیلندر', 'اتوماتیک', '1.9 لیتر در 100 کیلومتر', '4.4 ثانیه', 250, 'images/1bmwi8.jpg'),
+(10, 'بی ام و گرن کوپه 220i', '1997 سی سی', 'سدان', 'بنزینی دارای توربو', '4 سیلندر', 'اتوماتیک دوکلاچه', '6 لیتر در 100 کیلو متر', '7.1 ثانیه', 238, 'images/220i گرن کوپه - 1K JPEG.jpg'),
+(11, 'ب ام و 640i کوپه', '2979 سی سی', 'کروک', 'بنزینی', '6 سیلندر', 'اتوماتیک تیپ ترونیک', '7.9 لیتر در 100 کیلو متر', '6 ثانیه', 250, 'images/f10.jpg'),
+(12, 'بی ام و 20i x1', '1977 سی سی', 'شاسی بلند', 'بنزینی دارای توربو', '4 سیلندر', 'اتوماتیک تیپ ترونیک', ' 7.7 لیتر در 100 کیلو متر', '8 ثانیه', 215, 'images/20ix1.png');
 
 --
 -- Indexes for dumped tables
@@ -68,7 +69,7 @@ ALTER TABLE `cars`
 -- AUTO_INCREMENT for table `cars`
 --
 ALTER TABLE `cars`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
